@@ -23,260 +23,320 @@ class DatabaseSeeder extends Seeder
         ]);
 
         User::create([
-            'name' => 'Antonius Kevin',
+            'name' => 'Aaron',
             'role' => 'Guest',
-            'email' => 'antonius@gmail.com',
-            'password' => bcrypt('anton123')
-        ]);
-
-        User::create([
-            'name' => 'Vallencius Gavriel',
-            'role' => 'Guest',
-            'email' => 'vallencius@gmail.com',
-            'password' => bcrypt('vallen123')
+            'email' => 'aaron@gmail.com',
+            'password' => bcrypt('aaron123')
         ]);
 
         RoomType::create([
-            'type' => 'Single'
+            'type' => 'Small'
         ]);
         RoomType::create([
             'type' => 'Double'
         ]);
         RoomType::create([
-            'type' => 'Queen'
+            'type' => 'Large'
         ]);
         RoomType::create([
-            'type' => 'King'
+            'type' => 'VIP'
         ]);
 
         Room::create([
-            'name' => 'Lavender Room',
+            'name' => 'Standart Room',
             'room_type' => 1,
-            'price' => 200000,
+            'price' => 275000,
             'promo' => 0,
             'available' => 15,
-            'image' => 'lavender.avif'
+            'image' => 'standart.jpg'
         ]);
 
         Room::create([
-            'name' => 'Bougenville Room',
+            'name' => 'Classic Room',
             'room_type' => 1,
-            'price' => 250000,
+            'price' => 300000,
             'promo' => 10,
             'available' => 15,
-            'image' => 'bougenville.avif'
+            'image' => 'classic.jpg'
         ]);
 
         Room::create([
-            'name' => 'Rose Room',
+            'name' => 'VIP Room',
             'room_type' => 2,
-            'price' => 400000,
-            'promo' => 0,
+            'price' => 750000,
+            'promo' => 20,
             'available' => 10,
-            'image' => 'rose.avif'
+            'image' => 'VIP.webp'
         ]);
 
         Room::create([
-            'name' => 'Jasmine Room',
+            'name' => 'VVIP Room',
             'room_type' => 3,
-            'price' => 700000,
+            'price' => 1000000,
             'promo' => 0,
             'available' => 7,
-            'image' => 'jasmine.avif'
+            'image' => 'VVIP.jpg'
         ]);
 
         Room::create([
-            'name' => 'Lotus Room',
+            'name' => 'Platinum Room',
             'room_type' => 4,
-            'price' => 800000,
+            'price' => 1200000,
             'promo' => 0,
             'available' => 5,
-            'image' => 'lotus.avif'
+            'image' => 'platinum.webp'
         ]);
 
         News::create([
-            'title' => 'Beijing Set to Become Largest Travel & Tourism City Destination in the World',
-            'writer' => 'WWTC',
-            'content' => 'Research by the World Travel & Tourism Council (WTTC) has revealed that within the next decade, Beijing will overtake Paris to become the worlds largest Travel & Tourism city destination.
+            'title' => 'The public’s understanding of room types may be limiting hotel revenue potential',
+            'writer' => 'Jos Schaap',
+            'content' => "Hoteliers love their room types and think that their guests do too. But the fact is that standard rooms are the most popular room type booked by guests. If people love premium room types so much, why are there so few of them and so few premium bookings? The fact is that most people don’t love interesting room types – they love the lowest cost room available.
 
-            Research by the World Travel & Tourism Council (WTTC) has revealed that within the next decade, Beijing will overtake Paris to become the world’s largest Travel & Tourism city destination. 
+            Why? Because most guests have been conditioned to feel that the goal of travel planning is to find the lowest priced room. Here is the landscape that customers face when shopping: on average, 80% of rooms are non-premium. Then, every site lists their room types in order of price. If we have learned anything from Google, it is that the result at the top of the list is the best answer, right? Is it any wonder why we don’t sell as many premium rooms as we would like?
             
-            The report, sponsored by Visa and researched in partnership with Oxford Economics, ana-lysed key indicators such as Travel & Tourism’s contribution to GDP, employment and trav-eller spend. 
+            The Perception of Value
+            All our knowledge has its origin in our perceptions. 
+            Leonardo da Vinci
+            Why is that when it comes to booking a hotel room, even though many people have enough money to splurge on their travels, the majority of us have determined that, when it come to lodging, a standard room is just fine? The typical rationale is that anything more than standard is not needed – a waste of money perhaps. A room is a room after all? There are hundreds of thousands of suites around the world, but most are only occupied about 20% of the time and sit empty the rest of the year. So why exactly is that?
             
-            But while long term the outlook for a number of Chinese cities looks positive, prolonged travel restrictions and border closures slowed down the recovery in the short term. 
+            A sizable portion of consumers feel uncomfortable purchasing premium products or services, such as a premium room (even if they can afford to) because they believe it is a privilege which is undue and undeserved.
             
-            WTTC studied the impact of the Travel & Tourism sector in four major cities across China; Beijing, Chengdu, Guangzhou, and Shanghai and found a mixed picture across the four city destinations. 
+            For many, the idea of spending a large sum of money on luxury seems like a waste. Cynthia Cryder, associate professor of marketing at Washington University in St. Louis’ Olin Business School explains, that broadly speaking, a consumer’s willingness to spend money seems to hinge upon one factor: how psychologically uncomfortable you feel when you have to part with your money.
             
-            In all four cities the sector’s GDP contribution last year almost fully recovered back to 2019 levels.
+            Researchers have named this uncomfortable phenomenon the impostor syndrome from luxury consumption. We have been conditioned by society that luxury equates “expensive” and “exclusive.” Because of this, many consumers are hesitant to indulge in luxury as they feel it does represent who they truly are – and if they do, they are “embarrassed” by it. They do not want to disclose their wasteful indulgence. The “psychological cost of luxury” takes away any happiness and enjoyment that someone would otherwise get from purchases.
             
-            The GDP contribution from the sector to Beijing and Chengdu’s economy in 2022 was just 4% and 2% below 2019 levels respectively ($34BN and $5.4BN), compared to $31BN and $5.5BN. 
+            When encountering room type names with words like, Deluxe, Premier, Luxury, Suite, Parlor, Executive, Chairman’s, Presidential, it is easy to see how many believe that such luxury is excessive given that they are most likely in town for something other than staying in the hotel. These feelings are not confined to just one specific group but are prevalent among all consumers from those considered the “luxury target market” to middle-class consumers.
             
-            Last year, the Travel & Tourism’s GDP contribution in Guangzhou and Shanghai was around 7% below 2019 levels. In Guangzhou the sector contributed $13.2BN in 2022 compared to $14.1BN pre-pandemic, while in Shanghai, the sector contributed $29.7BN compared to $31.5BN in 2019. 
+            On top of this, most consumers do not look at prices though a rational lens. Non-budgeted expenses seem more expensive. For example, we are conditioned to accept regularly spending large amounts for groceries – which often include discretionary purchases. But it is hard to rationalize an irregular purchase, like a hotel suite, because it is hard to understand the value when we aren’t used to purchasing the product.
             
-            Julia Simpson, WTTC President & CEO, said: “China has long been a world-favourite holiday destination and after more than two years of disruption, it’s great to see tourists heading back. Tourists provide a massive boost to both the economy and job creation. 
+            A consumer’s perception of what the appropriate price is has been made even harder by the power of the OTAs. With rate shopping, OTA’s promote direct cost comparison by establishing price as the single differentiator. As such, consumers have become conditioned to think “price first.” For example, when searching for a king bed in a 5-star hotel in Aruba, and a guest comes across five or more similar listings, they’ll most likely opt for the lowest-priced option. There may be an available room with stunning sunset views that would really make their Caribbean vacation an unforgettable experience – but the hotel room shopping experience is just not designed to prioritize experience over price.
             
-            “It is crucial that the national and local governments continue to recognise the importance of Travel & Tourism for the local and national economies, jobs and businesses.” 
+            Re-Framing Value: What Attribute-based Selling (ABS) Can Do
+            We know that guests are fixated on price - and of course, price will always matter. But, hotels have the opportunity to reposition price as just one factor of their overall decision.
             
-            Jobs on the rise 
+            Instead of the traditional method of offering rooms by room type – where consumers routinely end up picking the lowest priced option – with ABS hoteliers can “unbundle” room inventory and merchandize individual attributes of a room to the guest. This new shopping experience benefits both guests and hoteliers:
             
-            In 2019, there were 1.35MN people employed by the Travel & Tourism sector in Beijing. But in 2020 this figure dropped to 1.16MN (-15%). In 2021, employment grew by more than 5% and is expected to have grown a further 4% in 2022 to reach 1.27MN jobs. 
+            Guests can now easily correlate price with things they truly value - the tangible features and unique room attributes. Guests have the choice to spend their money on the bundle of features that gives them the most pleasure.
+            With ABS, hotels can monetize more of their assets and in the process increase the perceived value of their product without increasing their objective costs.
+            Room features that currently go unnoticed now drive differentiation and minimize direct price comparison for products that are actually different.
+            By giving consumers the option to choose features they value most, hoteliers have an opportunity to win on more than just price. The guest that feels good about their reservation – and their stay expectations, tend to be more loyal.
+            Any marketer can tell you that the presentation method of an offer, product, or service, can make a huge difference in our decision-making.For a hotel, your room product might just be the “best,” but it won’t be the best if the consumer can’t see its value. To the consumer, it is just another room. So, unless we all want merchandize our rooms like Motel 6 who imply that all rooms are the same with the lights off, something needs to be done to better showcase – and derive appropriate value from – our premium rooms. ABS holds the answer.
             
-            In the other three cities, it’s a similar picture. 
+            About ROOMDEX, INC
+            ROOMDEX's hotel upsell software, Upgrade Optimizer, automates, monetizes, and ultimately simplifies the hotel room upgrade process by putting the power of choice in the hotel guest's hands. Automation is the cornerstone of our pioneering hotel optimization platform. ROOMDEX uses hotel reservation, guest data and its proprietary persona and price algorithms to deliver personalized digital offers, greatly enhancing the guest experience. The hotel upsell tool relieves hoteliers of the labor time required by other upselling solutions while delivering high margin revenue and a substantial ROI.
             
-            Before the pandemic, there were 1.32MN Travel & Tourism jobs in Shanghai, but this num-ber fell to 1.13MN in 2020 (-14%). A 10% rise in 2021 saw the number increase to 1.25MN and it was predicted to see a slight increase to 1.26MN in 2022. 
-            
-            In Guangzhou there were just over 603,000 jobs in 2019 but this dropped by 23% to just over 464,000. A slight 4% rise in 2021 saw jobs increase to just under 481,000 and WTTC is ex-pecting a 16.5% increase in 2022 to bring the total jobs to over 560,000. 
-            
-            Chengdu is seeing an even stronger return to pre-pandemic levels. In 2019 there were 336,000 jobs in the city which dropped by 12% to just under 297,000 in 2020. The following year saw a small 5% increase to 311,000 jobs and last year the global tourism body is pre-dicting a 6% increase to 329,500 jobs – just 2% below pre-pandemic levels. 
-            
-            Visitor spend struggles as borders have remained closed 
-            
-            Due to the prolonged border closures imposed by the government, international visitor spend is taking longer to recover than in other countries around the world. 
-            
-            But light is at the end of the tunnel. Whilst international visitor spend is still on average 53% lower in 2022 than it was in 2019, all of the cities analysed are showing modest year-on-year increases. 
-            
-            International visitor spend in Beijing is just 41% what it was in 2019, with visitors spending a predicted $5BN in 2022 compared to $12.1BN in 2019. In Chengdu, international visitor spend is performing better than the capital with recovery at 61% of 2019 levels. Travellers spent $1.5BN in Chengdu in 2022 compared to $2.5BN in 2019.  
-            
-            Both Shanghai and Guangzhou have seen international visitor spend drop to 44% of 2019 levels. In Shanghai it went from $11.9BN before the pandemic to $5.2BN in 2022, while in Guangzhou it went from $4.3BN in 2019 to $1.9BN in 2022.',
-            'image' => 'WWTC.jpg'
+            The company was founded by Jos Schaap, Pierre Boettner and Denis Bajet, three industry veterans (Ex. MICROS-OPERA (now Oracle Hospitality), StayNTouch, Shiji and Nor1).  ROOMDEX leverages over 90 years of hotel software innovation experience in PMS, integrations, revenue management, BI, mobile, self-service and upgrade optimization software. Since founding in spring of 2020, ROOMDEX has signed on more than 100 hotels with 9,500 rooms across the U.S., U.K. and Europe.",
+            'image' => 'News.jpg'
         ]);
+        
         News::create([
-            'title' => 'Beijing Set to Become Largest Travel & Tourism City Destination in the World',
-            'writer' => 'WWTC',
-            'content' => 'Research by the World Travel & Tourism Council (WTTC) has revealed that within the next decade, Beijing will overtake Paris to become the worlds largest Travel & Tourism city destination.
+            'title' => 'The public’s understanding of room types may be limiting hotel revenue potential',
+            'writer' => 'Jos Schaap',
+            'content' => "Hoteliers love their room types and think that their guests do too. But the fact is that standard rooms are the most popular room type booked by guests. If people love premium room types so much, why are there so few of them and so few premium bookings? The fact is that most people don’t love interesting room types – they love the lowest cost room available.
 
-            Research by the World Travel & Tourism Council (WTTC) has revealed that within the next decade, Beijing will overtake Paris to become the world’s largest Travel & Tourism city destination. 
+            Why? Because most guests have been conditioned to feel that the goal of travel planning is to find the lowest priced room. Here is the landscape that customers face when shopping: on average, 80% of rooms are non-premium. Then, every site lists their room types in order of price. If we have learned anything from Google, it is that the result at the top of the list is the best answer, right? Is it any wonder why we don’t sell as many premium rooms as we would like?
             
-            The report, sponsored by Visa and researched in partnership with Oxford Economics, ana-lysed key indicators such as Travel & Tourism’s contribution to GDP, employment and trav-eller spend. 
+            The Perception of Value
+            All our knowledge has its origin in our perceptions. 
+            Leonardo da Vinci
+            Why is that when it comes to booking a hotel room, even though many people have enough money to splurge on their travels, the majority of us have determined that, when it come to lodging, a standard room is just fine? The typical rationale is that anything more than standard is not needed – a waste of money perhaps. A room is a room after all? There are hundreds of thousands of suites around the world, but most are only occupied about 20% of the time and sit empty the rest of the year. So why exactly is that?
             
-            But while long term the outlook for a number of Chinese cities looks positive, prolonged travel restrictions and border closures slowed down the recovery in the short term. 
+            A sizable portion of consumers feel uncomfortable purchasing premium products or services, such as a premium room (even if they can afford to) because they believe it is a privilege which is undue and undeserved.
             
-            WTTC studied the impact of the Travel & Tourism sector in four major cities across China; Beijing, Chengdu, Guangzhou, and Shanghai and found a mixed picture across the four city destinations. 
+            For many, the idea of spending a large sum of money on luxury seems like a waste. Cynthia Cryder, associate professor of marketing at Washington University in St. Louis’ Olin Business School explains, that broadly speaking, a consumer’s willingness to spend money seems to hinge upon one factor: how psychologically uncomfortable you feel when you have to part with your money.
             
-            In all four cities the sector’s GDP contribution last year almost fully recovered back to 2019 levels.
+            Researchers have named this uncomfortable phenomenon the impostor syndrome from luxury consumption. We have been conditioned by society that luxury equates “expensive” and “exclusive.” Because of this, many consumers are hesitant to indulge in luxury as they feel it does represent who they truly are – and if they do, they are “embarrassed” by it. They do not want to disclose their wasteful indulgence. The “psychological cost of luxury” takes away any happiness and enjoyment that someone would otherwise get from purchases.
             
-            The GDP contribution from the sector to Beijing and Chengdu’s economy in 2022 was just 4% and 2% below 2019 levels respectively ($34BN and $5.4BN), compared to $31BN and $5.5BN. 
+            When encountering room type names with words like, Deluxe, Premier, Luxury, Suite, Parlor, Executive, Chairman’s, Presidential, it is easy to see how many believe that such luxury is excessive given that they are most likely in town for something other than staying in the hotel. These feelings are not confined to just one specific group but are prevalent among all consumers from those considered the “luxury target market” to middle-class consumers.
             
-            Last year, the Travel & Tourism’s GDP contribution in Guangzhou and Shanghai was around 7% below 2019 levels. In Guangzhou the sector contributed $13.2BN in 2022 compared to $14.1BN pre-pandemic, while in Shanghai, the sector contributed $29.7BN compared to $31.5BN in 2019. 
+            On top of this, most consumers do not look at prices though a rational lens. Non-budgeted expenses seem more expensive. For example, we are conditioned to accept regularly spending large amounts for groceries – which often include discretionary purchases. But it is hard to rationalize an irregular purchase, like a hotel suite, because it is hard to understand the value when we aren’t used to purchasing the product.
             
-            Julia Simpson, WTTC President & CEO, said: “China has long been a world-favourite holiday destination and after more than two years of disruption, it’s great to see tourists heading back. Tourists provide a massive boost to both the economy and job creation. 
+            A consumer’s perception of what the appropriate price is has been made even harder by the power of the OTAs. With rate shopping, OTA’s promote direct cost comparison by establishing price as the single differentiator. As such, consumers have become conditioned to think “price first.” For example, when searching for a king bed in a 5-star hotel in Aruba, and a guest comes across five or more similar listings, they’ll most likely opt for the lowest-priced option. There may be an available room with stunning sunset views that would really make their Caribbean vacation an unforgettable experience – but the hotel room shopping experience is just not designed to prioritize experience over price.
             
-            “It is crucial that the national and local governments continue to recognise the importance of Travel & Tourism for the local and national economies, jobs and businesses.” 
+            Re-Framing Value: What Attribute-based Selling (ABS) Can Do
+            We know that guests are fixated on price - and of course, price will always matter. But, hotels have the opportunity to reposition price as just one factor of their overall decision.
             
-            Jobs on the rise 
+            Instead of the traditional method of offering rooms by room type – where consumers routinely end up picking the lowest priced option – with ABS hoteliers can “unbundle” room inventory and merchandize individual attributes of a room to the guest. This new shopping experience benefits both guests and hoteliers:
             
-            In 2019, there were 1.35MN people employed by the Travel & Tourism sector in Beijing. But in 2020 this figure dropped to 1.16MN (-15%). In 2021, employment grew by more than 5% and is expected to have grown a further 4% in 2022 to reach 1.27MN jobs. 
+            Guests can now easily correlate price with things they truly value - the tangible features and unique room attributes. Guests have the choice to spend their money on the bundle of features that gives them the most pleasure.
+            With ABS, hotels can monetize more of their assets and in the process increase the perceived value of their product without increasing their objective costs.
+            Room features that currently go unnoticed now drive differentiation and minimize direct price comparison for products that are actually different.
+            By giving consumers the option to choose features they value most, hoteliers have an opportunity to win on more than just price. The guest that feels good about their reservation – and their stay expectations, tend to be more loyal.
+            Any marketer can tell you that the presentation method of an offer, product, or service, can make a huge difference in our decision-making.For a hotel, your room product might just be the “best,” but it won’t be the best if the consumer can’t see its value. To the consumer, it is just another room. So, unless we all want merchandize our rooms like Motel 6 who imply that all rooms are the same with the lights off, something needs to be done to better showcase – and derive appropriate value from – our premium rooms. ABS holds the answer.
             
-            In the other three cities, it’s a similar picture. 
+            About ROOMDEX, INC
+            ROOMDEX's hotel upsell software, Upgrade Optimizer, automates, monetizes, and ultimately simplifies the hotel room upgrade process by putting the power of choice in the hotel guest's hands. Automation is the cornerstone of our pioneering hotel optimization platform. ROOMDEX uses hotel reservation, guest data and its proprietary persona and price algorithms to deliver personalized digital offers, greatly enhancing the guest experience. The hotel upsell tool relieves hoteliers of the labor time required by other upselling solutions while delivering high margin revenue and a substantial ROI.
             
-            Before the pandemic, there were 1.32MN Travel & Tourism jobs in Shanghai, but this num-ber fell to 1.13MN in 2020 (-14%). A 10% rise in 2021 saw the number increase to 1.25MN and it was predicted to see a slight increase to 1.26MN in 2022. 
-            
-            In Guangzhou there were just over 603,000 jobs in 2019 but this dropped by 23% to just over 464,000. A slight 4% rise in 2021 saw jobs increase to just under 481,000 and WTTC is ex-pecting a 16.5% increase in 2022 to bring the total jobs to over 560,000. 
-            
-            Chengdu is seeing an even stronger return to pre-pandemic levels. In 2019 there were 336,000 jobs in the city which dropped by 12% to just under 297,000 in 2020. The following year saw a small 5% increase to 311,000 jobs and last year the global tourism body is pre-dicting a 6% increase to 329,500 jobs – just 2% below pre-pandemic levels. 
-            
-            Visitor spend struggles as borders have remained closed 
-            
-            Due to the prolonged border closures imposed by the government, international visitor spend is taking longer to recover than in other countries around the world. 
-            
-            But light is at the end of the tunnel. Whilst international visitor spend is still on average 53% lower in 2022 than it was in 2019, all of the cities analysed are showing modest year-on-year increases. 
-            
-            International visitor spend in Beijing is just 41% what it was in 2019, with visitors spending a predicted $5BN in 2022 compared to $12.1BN in 2019. In Chengdu, international visitor spend is performing better than the capital with recovery at 61% of 2019 levels. Travellers spent $1.5BN in Chengdu in 2022 compared to $2.5BN in 2019.  
-            
-            Both Shanghai and Guangzhou have seen international visitor spend drop to 44% of 2019 levels. In Shanghai it went from $11.9BN before the pandemic to $5.2BN in 2022, while in Guangzhou it went from $4.3BN in 2019 to $1.9BN in 2022.',
-            'image' => 'WWTC.jpg'
+            The company was founded by Jos Schaap, Pierre Boettner and Denis Bajet, three industry veterans (Ex. MICROS-OPERA (now Oracle Hospitality), StayNTouch, Shiji and Nor1).  ROOMDEX leverages over 90 years of hotel software innovation experience in PMS, integrations, revenue management, BI, mobile, self-service and upgrade optimization software. Since founding in spring of 2020, ROOMDEX has signed on more than 100 hotels with 9,500 rooms across the U.S., U.K. and Europe.",
+            'image' => 'News.jpg'
         ]);
+        
         News::create([
-            'title' => 'Beijing Set to Become Largest Travel & Tourism City Destination in the World',
-            'writer' => 'WWTC',
-            'content' => 'Research by the World Travel & Tourism Council (WTTC) has revealed that within the next decade, Beijing will overtake Paris to become the worlds largest Travel & Tourism city destination.
+            'title' => 'The public’s understanding of room types may be limiting hotel revenue potential',
+            'writer' => 'Jos Schaap',
+            'content' => "Hoteliers love their room types and think that their guests do too. But the fact is that standard rooms are the most popular room type booked by guests. If people love premium room types so much, why are there so few of them and so few premium bookings? The fact is that most people don’t love interesting room types – they love the lowest cost room available.
 
-            Research by the World Travel & Tourism Council (WTTC) has revealed that within the next decade, Beijing will overtake Paris to become the world’s largest Travel & Tourism city destination. 
+            Why? Because most guests have been conditioned to feel that the goal of travel planning is to find the lowest priced room. Here is the landscape that customers face when shopping: on average, 80% of rooms are non-premium. Then, every site lists their room types in order of price. If we have learned anything from Google, it is that the result at the top of the list is the best answer, right? Is it any wonder why we don’t sell as many premium rooms as we would like?
             
-            The report, sponsored by Visa and researched in partnership with Oxford Economics, ana-lysed key indicators such as Travel & Tourism’s contribution to GDP, employment and trav-eller spend. 
+            The Perception of Value
+            All our knowledge has its origin in our perceptions. 
+            Leonardo da Vinci
+            Why is that when it comes to booking a hotel room, even though many people have enough money to splurge on their travels, the majority of us have determined that, when it come to lodging, a standard room is just fine? The typical rationale is that anything more than standard is not needed – a waste of money perhaps. A room is a room after all? There are hundreds of thousands of suites around the world, but most are only occupied about 20% of the time and sit empty the rest of the year. So why exactly is that?
             
-            But while long term the outlook for a number of Chinese cities looks positive, prolonged travel restrictions and border closures slowed down the recovery in the short term. 
+            A sizable portion of consumers feel uncomfortable purchasing premium products or services, such as a premium room (even if they can afford to) because they believe it is a privilege which is undue and undeserved.
             
-            WTTC studied the impact of the Travel & Tourism sector in four major cities across China; Beijing, Chengdu, Guangzhou, and Shanghai and found a mixed picture across the four city destinations. 
+            For many, the idea of spending a large sum of money on luxury seems like a waste. Cynthia Cryder, associate professor of marketing at Washington University in St. Louis’ Olin Business School explains, that broadly speaking, a consumer’s willingness to spend money seems to hinge upon one factor: how psychologically uncomfortable you feel when you have to part with your money.
             
-            In all four cities the sector’s GDP contribution last year almost fully recovered back to 2019 levels.
+            Researchers have named this uncomfortable phenomenon the impostor syndrome from luxury consumption. We have been conditioned by society that luxury equates “expensive” and “exclusive.” Because of this, many consumers are hesitant to indulge in luxury as they feel it does represent who they truly are – and if they do, they are “embarrassed” by it. They do not want to disclose their wasteful indulgence. The “psychological cost of luxury” takes away any happiness and enjoyment that someone would otherwise get from purchases.
             
-            The GDP contribution from the sector to Beijing and Chengdu’s economy in 2022 was just 4% and 2% below 2019 levels respectively ($34BN and $5.4BN), compared to $31BN and $5.5BN. 
+            When encountering room type names with words like, Deluxe, Premier, Luxury, Suite, Parlor, Executive, Chairman’s, Presidential, it is easy to see how many believe that such luxury is excessive given that they are most likely in town for something other than staying in the hotel. These feelings are not confined to just one specific group but are prevalent among all consumers from those considered the “luxury target market” to middle-class consumers.
             
-            Last year, the Travel & Tourism’s GDP contribution in Guangzhou and Shanghai was around 7% below 2019 levels. In Guangzhou the sector contributed $13.2BN in 2022 compared to $14.1BN pre-pandemic, while in Shanghai, the sector contributed $29.7BN compared to $31.5BN in 2019. 
+            On top of this, most consumers do not look at prices though a rational lens. Non-budgeted expenses seem more expensive. For example, we are conditioned to accept regularly spending large amounts for groceries – which often include discretionary purchases. But it is hard to rationalize an irregular purchase, like a hotel suite, because it is hard to understand the value when we aren’t used to purchasing the product.
             
-            Julia Simpson, WTTC President & CEO, said: “China has long been a world-favourite holiday destination and after more than two years of disruption, it’s great to see tourists heading back. Tourists provide a massive boost to both the economy and job creation. 
+            A consumer’s perception of what the appropriate price is has been made even harder by the power of the OTAs. With rate shopping, OTA’s promote direct cost comparison by establishing price as the single differentiator. As such, consumers have become conditioned to think “price first.” For example, when searching for a king bed in a 5-star hotel in Aruba, and a guest comes across five or more similar listings, they’ll most likely opt for the lowest-priced option. There may be an available room with stunning sunset views that would really make their Caribbean vacation an unforgettable experience – but the hotel room shopping experience is just not designed to prioritize experience over price.
             
-            “It is crucial that the national and local governments continue to recognise the importance of Travel & Tourism for the local and national economies, jobs and businesses.” 
+            Re-Framing Value: What Attribute-based Selling (ABS) Can Do
+            We know that guests are fixated on price - and of course, price will always matter. But, hotels have the opportunity to reposition price as just one factor of their overall decision.
             
-            Jobs on the rise 
+            Instead of the traditional method of offering rooms by room type – where consumers routinely end up picking the lowest priced option – with ABS hoteliers can “unbundle” room inventory and merchandize individual attributes of a room to the guest. This new shopping experience benefits both guests and hoteliers:
             
-            In 2019, there were 1.35MN people employed by the Travel & Tourism sector in Beijing. But in 2020 this figure dropped to 1.16MN (-15%). In 2021, employment grew by more than 5% and is expected to have grown a further 4% in 2022 to reach 1.27MN jobs. 
+            Guests can now easily correlate price with things they truly value - the tangible features and unique room attributes. Guests have the choice to spend their money on the bundle of features that gives them the most pleasure.
+            With ABS, hotels can monetize more of their assets and in the process increase the perceived value of their product without increasing their objective costs.
+            Room features that currently go unnoticed now drive differentiation and minimize direct price comparison for products that are actually different.
+            By giving consumers the option to choose features they value most, hoteliers have an opportunity to win on more than just price. The guest that feels good about their reservation – and their stay expectations, tend to be more loyal.
+            Any marketer can tell you that the presentation method of an offer, product, or service, can make a huge difference in our decision-making.For a hotel, your room product might just be the “best,” but it won’t be the best if the consumer can’t see its value. To the consumer, it is just another room. So, unless we all want merchandize our rooms like Motel 6 who imply that all rooms are the same with the lights off, something needs to be done to better showcase – and derive appropriate value from – our premium rooms. ABS holds the answer.
             
-            In the other three cities, it’s a similar picture. 
+            About ROOMDEX, INC
+            ROOMDEX's hotel upsell software, Upgrade Optimizer, automates, monetizes, and ultimately simplifies the hotel room upgrade process by putting the power of choice in the hotel guest's hands. Automation is the cornerstone of our pioneering hotel optimization platform. ROOMDEX uses hotel reservation, guest data and its proprietary persona and price algorithms to deliver personalized digital offers, greatly enhancing the guest experience. The hotel upsell tool relieves hoteliers of the labor time required by other upselling solutions while delivering high margin revenue and a substantial ROI.
             
-            Before the pandemic, there were 1.32MN Travel & Tourism jobs in Shanghai, but this num-ber fell to 1.13MN in 2020 (-14%). A 10% rise in 2021 saw the number increase to 1.25MN and it was predicted to see a slight increase to 1.26MN in 2022. 
-            
-            In Guangzhou there were just over 603,000 jobs in 2019 but this dropped by 23% to just over 464,000. A slight 4% rise in 2021 saw jobs increase to just under 481,000 and WTTC is ex-pecting a 16.5% increase in 2022 to bring the total jobs to over 560,000. 
-            
-            Chengdu is seeing an even stronger return to pre-pandemic levels. In 2019 there were 336,000 jobs in the city which dropped by 12% to just under 297,000 in 2020. The following year saw a small 5% increase to 311,000 jobs and last year the global tourism body is pre-dicting a 6% increase to 329,500 jobs – just 2% below pre-pandemic levels. 
-            
-            Visitor spend struggles as borders have remained closed 
-            
-            Due to the prolonged border closures imposed by the government, international visitor spend is taking longer to recover than in other countries around the world. 
-            
-            But light is at the end of the tunnel. Whilst international visitor spend is still on average 53% lower in 2022 than it was in 2019, all of the cities analysed are showing modest year-on-year increases. 
-            
-            International visitor spend in Beijing is just 41% what it was in 2019, with visitors spending a predicted $5BN in 2022 compared to $12.1BN in 2019. In Chengdu, international visitor spend is performing better than the capital with recovery at 61% of 2019 levels. Travellers spent $1.5BN in Chengdu in 2022 compared to $2.5BN in 2019.  
-            
-            Both Shanghai and Guangzhou have seen international visitor spend drop to 44% of 2019 levels. In Shanghai it went from $11.9BN before the pandemic to $5.2BN in 2022, while in Guangzhou it went from $4.3BN in 2019 to $1.9BN in 2022.',
-            'image' => 'WWTC.jpg'
+            The company was founded by Jos Schaap, Pierre Boettner and Denis Bajet, three industry veterans (Ex. MICROS-OPERA (now Oracle Hospitality), StayNTouch, Shiji and Nor1).  ROOMDEX leverages over 90 years of hotel software innovation experience in PMS, integrations, revenue management, BI, mobile, self-service and upgrade optimization software. Since founding in spring of 2020, ROOMDEX has signed on more than 100 hotels with 9,500 rooms across the U.S., U.K. and Europe.",
+            'image' => 'News.jpg'
         ]);
+        
         News::create([
-            'title' => 'Beijing Set to Become Largest Travel & Tourism City Destination in the World',
-            'writer' => 'WWTC',
-            'content' => 'Research by the World Travel & Tourism Council (WTTC) has revealed that within the next decade, Beijing will overtake Paris to become the worlds largest Travel & Tourism city destination.
+            'title' => 'The public’s understanding of room types may be limiting hotel revenue potential',
+            'writer' => 'Jos Schaap',
+            'content' => "Hoteliers love their room types and think that their guests do too. But the fact is that standard rooms are the most popular room type booked by guests. If people love premium room types so much, why are there so few of them and so few premium bookings? The fact is that most people don’t love interesting room types – they love the lowest cost room available.
 
-            Research by the World Travel & Tourism Council (WTTC) has revealed that within the next decade, Beijing will overtake Paris to become the world’s largest Travel & Tourism city destination. 
+            Why? Because most guests have been conditioned to feel that the goal of travel planning is to find the lowest priced room. Here is the landscape that customers face when shopping: on average, 80% of rooms are non-premium. Then, every site lists their room types in order of price. If we have learned anything from Google, it is that the result at the top of the list is the best answer, right? Is it any wonder why we don’t sell as many premium rooms as we would like?
             
-            The report, sponsored by Visa and researched in partnership with Oxford Economics, ana-lysed key indicators such as Travel & Tourism’s contribution to GDP, employment and trav-eller spend. 
+            The Perception of Value
+            All our knowledge has its origin in our perceptions. 
+            Leonardo da Vinci
+            Why is that when it comes to booking a hotel room, even though many people have enough money to splurge on their travels, the majority of us have determined that, when it come to lodging, a standard room is just fine? The typical rationale is that anything more than standard is not needed – a waste of money perhaps. A room is a room after all? There are hundreds of thousands of suites around the world, but most are only occupied about 20% of the time and sit empty the rest of the year. So why exactly is that?
             
-            But while long term the outlook for a number of Chinese cities looks positive, prolonged travel restrictions and border closures slowed down the recovery in the short term. 
+            A sizable portion of consumers feel uncomfortable purchasing premium products or services, such as a premium room (even if they can afford to) because they believe it is a privilege which is undue and undeserved.
             
-            WTTC studied the impact of the Travel & Tourism sector in four major cities across China; Beijing, Chengdu, Guangzhou, and Shanghai and found a mixed picture across the four city destinations. 
+            For many, the idea of spending a large sum of money on luxury seems like a waste. Cynthia Cryder, associate professor of marketing at Washington University in St. Louis’ Olin Business School explains, that broadly speaking, a consumer’s willingness to spend money seems to hinge upon one factor: how psychologically uncomfortable you feel when you have to part with your money.
             
-            In all four cities the sector’s GDP contribution last year almost fully recovered back to 2019 levels.
+            Researchers have named this uncomfortable phenomenon the impostor syndrome from luxury consumption. We have been conditioned by society that luxury equates “expensive” and “exclusive.” Because of this, many consumers are hesitant to indulge in luxury as they feel it does represent who they truly are – and if they do, they are “embarrassed” by it. They do not want to disclose their wasteful indulgence. The “psychological cost of luxury” takes away any happiness and enjoyment that someone would otherwise get from purchases.
             
-            The GDP contribution from the sector to Beijing and Chengdu’s economy in 2022 was just 4% and 2% below 2019 levels respectively ($34BN and $5.4BN), compared to $31BN and $5.5BN. 
+            When encountering room type names with words like, Deluxe, Premier, Luxury, Suite, Parlor, Executive, Chairman’s, Presidential, it is easy to see how many believe that such luxury is excessive given that they are most likely in town for something other than staying in the hotel. These feelings are not confined to just one specific group but are prevalent among all consumers from those considered the “luxury target market” to middle-class consumers.
             
-            Last year, the Travel & Tourism’s GDP contribution in Guangzhou and Shanghai was around 7% below 2019 levels. In Guangzhou the sector contributed $13.2BN in 2022 compared to $14.1BN pre-pandemic, while in Shanghai, the sector contributed $29.7BN compared to $31.5BN in 2019. 
+            On top of this, most consumers do not look at prices though a rational lens. Non-budgeted expenses seem more expensive. For example, we are conditioned to accept regularly spending large amounts for groceries – which often include discretionary purchases. But it is hard to rationalize an irregular purchase, like a hotel suite, because it is hard to understand the value when we aren’t used to purchasing the product.
             
-            Julia Simpson, WTTC President & CEO, said: “China has long been a world-favourite holiday destination and after more than two years of disruption, it’s great to see tourists heading back. Tourists provide a massive boost to both the economy and job creation. 
+            A consumer’s perception of what the appropriate price is has been made even harder by the power of the OTAs. With rate shopping, OTA’s promote direct cost comparison by establishing price as the single differentiator. As such, consumers have become conditioned to think “price first.” For example, when searching for a king bed in a 5-star hotel in Aruba, and a guest comes across five or more similar listings, they’ll most likely opt for the lowest-priced option. There may be an available room with stunning sunset views that would really make their Caribbean vacation an unforgettable experience – but the hotel room shopping experience is just not designed to prioritize experience over price.
             
-            “It is crucial that the national and local governments continue to recognise the importance of Travel & Tourism for the local and national economies, jobs and businesses.” 
+            Re-Framing Value: What Attribute-based Selling (ABS) Can Do
+            We know that guests are fixated on price - and of course, price will always matter. But, hotels have the opportunity to reposition price as just one factor of their overall decision.
             
-            Jobs on the rise 
+            Instead of the traditional method of offering rooms by room type – where consumers routinely end up picking the lowest priced option – with ABS hoteliers can “unbundle” room inventory and merchandize individual attributes of a room to the guest. This new shopping experience benefits both guests and hoteliers:
             
-            In 2019, there were 1.35MN people employed by the Travel & Tourism sector in Beijing. But in 2020 this figure dropped to 1.16MN (-15%). In 2021, employment grew by more than 5% and is expected to have grown a further 4% in 2022 to reach 1.27MN jobs. 
+            Guests can now easily correlate price with things they truly value - the tangible features and unique room attributes. Guests have the choice to spend their money on the bundle of features that gives them the most pleasure.
+            With ABS, hotels can monetize more of their assets and in the process increase the perceived value of their product without increasing their objective costs.
+            Room features that currently go unnoticed now drive differentiation and minimize direct price comparison for products that are actually different.
+            By giving consumers the option to choose features they value most, hoteliers have an opportunity to win on more than just price. The guest that feels good about their reservation – and their stay expectations, tend to be more loyal.
+            Any marketer can tell you that the presentation method of an offer, product, or service, can make a huge difference in our decision-making.For a hotel, your room product might just be the “best,” but it won’t be the best if the consumer can’t see its value. To the consumer, it is just another room. So, unless we all want merchandize our rooms like Motel 6 who imply that all rooms are the same with the lights off, something needs to be done to better showcase – and derive appropriate value from – our premium rooms. ABS holds the answer.
             
-            In the other three cities, it’s a similar picture. 
+            About ROOMDEX, INC
+            ROOMDEX's hotel upsell software, Upgrade Optimizer, automates, monetizes, and ultimately simplifies the hotel room upgrade process by putting the power of choice in the hotel guest's hands. Automation is the cornerstone of our pioneering hotel optimization platform. ROOMDEX uses hotel reservation, guest data and its proprietary persona and price algorithms to deliver personalized digital offers, greatly enhancing the guest experience. The hotel upsell tool relieves hoteliers of the labor time required by other upselling solutions while delivering high margin revenue and a substantial ROI.
             
-            Before the pandemic, there were 1.32MN Travel & Tourism jobs in Shanghai, but this num-ber fell to 1.13MN in 2020 (-14%). A 10% rise in 2021 saw the number increase to 1.25MN and it was predicted to see a slight increase to 1.26MN in 2022. 
+            The company was founded by Jos Schaap, Pierre Boettner and Denis Bajet, three industry veterans (Ex. MICROS-OPERA (now Oracle Hospitality), StayNTouch, Shiji and Nor1).  ROOMDEX leverages over 90 years of hotel software innovation experience in PMS, integrations, revenue management, BI, mobile, self-service and upgrade optimization software. Since founding in spring of 2020, ROOMDEX has signed on more than 100 hotels with 9,500 rooms across the U.S., U.K. and Europe.",
+            'image' => 'News.jpg'
+        ]);
+        
+        News::create([
+            'title' => 'The public’s understanding of room types may be limiting hotel revenue potential',
+            'writer' => 'Jos Schaap',
+            'content' => "Hoteliers love their room types and think that their guests do too. But the fact is that standard rooms are the most popular room type booked by guests. If people love premium room types so much, why are there so few of them and so few premium bookings? The fact is that most people don’t love interesting room types – they love the lowest cost room available.
+
+            Why? Because most guests have been conditioned to feel that the goal of travel planning is to find the lowest priced room. Here is the landscape that customers face when shopping: on average, 80% of rooms are non-premium. Then, every site lists their room types in order of price. If we have learned anything from Google, it is that the result at the top of the list is the best answer, right? Is it any wonder why we don’t sell as many premium rooms as we would like?
             
-            In Guangzhou there were just over 603,000 jobs in 2019 but this dropped by 23% to just over 464,000. A slight 4% rise in 2021 saw jobs increase to just under 481,000 and WTTC is ex-pecting a 16.5% increase in 2022 to bring the total jobs to over 560,000. 
+            The Perception of Value
+            All our knowledge has its origin in our perceptions. 
+            Leonardo da Vinci
+            Why is that when it comes to booking a hotel room, even though many people have enough money to splurge on their travels, the majority of us have determined that, when it come to lodging, a standard room is just fine? The typical rationale is that anything more than standard is not needed – a waste of money perhaps. A room is a room after all? There are hundreds of thousands of suites around the world, but most are only occupied about 20% of the time and sit empty the rest of the year. So why exactly is that?
             
-            Chengdu is seeing an even stronger return to pre-pandemic levels. In 2019 there were 336,000 jobs in the city which dropped by 12% to just under 297,000 in 2020. The following year saw a small 5% increase to 311,000 jobs and last year the global tourism body is pre-dicting a 6% increase to 329,500 jobs – just 2% below pre-pandemic levels. 
+            A sizable portion of consumers feel uncomfortable purchasing premium products or services, such as a premium room (even if they can afford to) because they believe it is a privilege which is undue and undeserved.
             
-            Visitor spend struggles as borders have remained closed 
+            For many, the idea of spending a large sum of money on luxury seems like a waste. Cynthia Cryder, associate professor of marketing at Washington University in St. Louis’ Olin Business School explains, that broadly speaking, a consumer’s willingness to spend money seems to hinge upon one factor: how psychologically uncomfortable you feel when you have to part with your money.
             
-            Due to the prolonged border closures imposed by the government, international visitor spend is taking longer to recover than in other countries around the world. 
+            Researchers have named this uncomfortable phenomenon the impostor syndrome from luxury consumption. We have been conditioned by society that luxury equates “expensive” and “exclusive.” Because of this, many consumers are hesitant to indulge in luxury as they feel it does represent who they truly are – and if they do, they are “embarrassed” by it. They do not want to disclose their wasteful indulgence. The “psychological cost of luxury” takes away any happiness and enjoyment that someone would otherwise get from purchases.
             
-            But light is at the end of the tunnel. Whilst international visitor spend is still on average 53% lower in 2022 than it was in 2019, all of the cities analysed are showing modest year-on-year increases. 
+            When encountering room type names with words like, Deluxe, Premier, Luxury, Suite, Parlor, Executive, Chairman’s, Presidential, it is easy to see how many believe that such luxury is excessive given that they are most likely in town for something other than staying in the hotel. These feelings are not confined to just one specific group but are prevalent among all consumers from those considered the “luxury target market” to middle-class consumers.
             
-            International visitor spend in Beijing is just 41% what it was in 2019, with visitors spending a predicted $5BN in 2022 compared to $12.1BN in 2019. In Chengdu, international visitor spend is performing better than the capital with recovery at 61% of 2019 levels. Travellers spent $1.5BN in Chengdu in 2022 compared to $2.5BN in 2019.  
+            On top of this, most consumers do not look at prices though a rational lens. Non-budgeted expenses seem more expensive. For example, we are conditioned to accept regularly spending large amounts for groceries – which often include discretionary purchases. But it is hard to rationalize an irregular purchase, like a hotel suite, because it is hard to understand the value when we aren’t used to purchasing the product.
             
-            Both Shanghai and Guangzhou have seen international visitor spend drop to 44% of 2019 levels. In Shanghai it went from $11.9BN before the pandemic to $5.2BN in 2022, while in Guangzhou it went from $4.3BN in 2019 to $1.9BN in 2022.',
-            'image' => 'WWTC.jpg'
+            A consumer’s perception of what the appropriate price is has been made even harder by the power of the OTAs. With rate shopping, OTA’s promote direct cost comparison by establishing price as the single differentiator. As such, consumers have become conditioned to think “price first.” For example, when searching for a king bed in a 5-star hotel in Aruba, and a guest comes across five or more similar listings, they’ll most likely opt for the lowest-priced option. There may be an available room with stunning sunset views that would really make their Caribbean vacation an unforgettable experience – but the hotel room shopping experience is just not designed to prioritize experience over price.
+            
+            Re-Framing Value: What Attribute-based Selling (ABS) Can Do
+            We know that guests are fixated on price - and of course, price will always matter. But, hotels have the opportunity to reposition price as just one factor of their overall decision.
+            
+            Instead of the traditional method of offering rooms by room type – where consumers routinely end up picking the lowest priced option – with ABS hoteliers can “unbundle” room inventory and merchandize individual attributes of a room to the guest. This new shopping experience benefits both guests and hoteliers:
+            
+            Guests can now easily correlate price with things they truly value - the tangible features and unique room attributes. Guests have the choice to spend their money on the bundle of features that gives them the most pleasure.
+            With ABS, hotels can monetize more of their assets and in the process increase the perceived value of their product without increasing their objective costs.
+            Room features that currently go unnoticed now drive differentiation and minimize direct price comparison for products that are actually different.
+            By giving consumers the option to choose features they value most, hoteliers have an opportunity to win on more than just price. The guest that feels good about their reservation – and their stay expectations, tend to be more loyal.
+            Any marketer can tell you that the presentation method of an offer, product, or service, can make a huge difference in our decision-making.For a hotel, your room product might just be the “best,” but it won’t be the best if the consumer can’t see its value. To the consumer, it is just another room. So, unless we all want merchandize our rooms like Motel 6 who imply that all rooms are the same with the lights off, something needs to be done to better showcase – and derive appropriate value from – our premium rooms. ABS holds the answer.
+            
+            About ROOMDEX, INC
+            ROOMDEX's hotel upsell software, Upgrade Optimizer, automates, monetizes, and ultimately simplifies the hotel room upgrade process by putting the power of choice in the hotel guest's hands. Automation is the cornerstone of our pioneering hotel optimization platform. ROOMDEX uses hotel reservation, guest data and its proprietary persona and price algorithms to deliver personalized digital offers, greatly enhancing the guest experience. The hotel upsell tool relieves hoteliers of the labor time required by other upselling solutions while delivering high margin revenue and a substantial ROI.
+            
+            The company was founded by Jos Schaap, Pierre Boettner and Denis Bajet, three industry veterans (Ex. MICROS-OPERA (now Oracle Hospitality), StayNTouch, Shiji and Nor1).  ROOMDEX leverages over 90 years of hotel software innovation experience in PMS, integrations, revenue management, BI, mobile, self-service and upgrade optimization software. Since founding in spring of 2020, ROOMDEX has signed on more than 100 hotels with 9,500 rooms across the U.S., U.K. and Europe.",
+            'image' => 'News.jpg'
+        ]);
+        
+        News::create([
+            'title' => 'The public’s understanding of room types may be limiting hotel revenue potential',
+            'writer' => 'Jos Schaap',
+            'content' => "Hoteliers love their room types and think that their guests do too. But the fact is that standard rooms are the most popular room type booked by guests. If people love premium room types so much, why are there so few of them and so few premium bookings? The fact is that most people don’t love interesting room types – they love the lowest cost room available.
+
+            Why? Because most guests have been conditioned to feel that the goal of travel planning is to find the lowest priced room. Here is the landscape that customers face when shopping: on average, 80% of rooms are non-premium. Then, every site lists their room types in order of price. If we have learned anything from Google, it is that the result at the top of the list is the best answer, right? Is it any wonder why we don’t sell as many premium rooms as we would like?
+            
+            The Perception of Value
+            All our knowledge has its origin in our perceptions. 
+            Leonardo da Vinci
+            Why is that when it comes to booking a hotel room, even though many people have enough money to splurge on their travels, the majority of us have determined that, when it come to lodging, a standard room is just fine? The typical rationale is that anything more than standard is not needed – a waste of money perhaps. A room is a room after all? There are hundreds of thousands of suites around the world, but most are only occupied about 20% of the time and sit empty the rest of the year. So why exactly is that?
+            
+            A sizable portion of consumers feel uncomfortable purchasing premium products or services, such as a premium room (even if they can afford to) because they believe it is a privilege which is undue and undeserved.
+            
+            For many, the idea of spending a large sum of money on luxury seems like a waste. Cynthia Cryder, associate professor of marketing at Washington University in St. Louis’ Olin Business School explains, that broadly speaking, a consumer’s willingness to spend money seems to hinge upon one factor: how psychologically uncomfortable you feel when you have to part with your money.
+            
+            Researchers have named this uncomfortable phenomenon the impostor syndrome from luxury consumption. We have been conditioned by society that luxury equates “expensive” and “exclusive.” Because of this, many consumers are hesitant to indulge in luxury as they feel it does represent who they truly are – and if they do, they are “embarrassed” by it. They do not want to disclose their wasteful indulgence. The “psychological cost of luxury” takes away any happiness and enjoyment that someone would otherwise get from purchases.
+            
+            When encountering room type names with words like, Deluxe, Premier, Luxury, Suite, Parlor, Executive, Chairman’s, Presidential, it is easy to see how many believe that such luxury is excessive given that they are most likely in town for something other than staying in the hotel. These feelings are not confined to just one specific group but are prevalent among all consumers from those considered the “luxury target market” to middle-class consumers.
+            
+            On top of this, most consumers do not look at prices though a rational lens. Non-budgeted expenses seem more expensive. For example, we are conditioned to accept regularly spending large amounts for groceries – which often include discretionary purchases. But it is hard to rationalize an irregular purchase, like a hotel suite, because it is hard to understand the value when we aren’t used to purchasing the product.
+            
+            A consumer’s perception of what the appropriate price is has been made even harder by the power of the OTAs. With rate shopping, OTA’s promote direct cost comparison by establishing price as the single differentiator. As such, consumers have become conditioned to think “price first.” For example, when searching for a king bed in a 5-star hotel in Aruba, and a guest comes across five or more similar listings, they’ll most likely opt for the lowest-priced option. There may be an available room with stunning sunset views that would really make their Caribbean vacation an unforgettable experience – but the hotel room shopping experience is just not designed to prioritize experience over price.
+            
+            Re-Framing Value: What Attribute-based Selling (ABS) Can Do
+            We know that guests are fixated on price - and of course, price will always matter. But, hotels have the opportunity to reposition price as just one factor of their overall decision.
+            
+            Instead of the traditional method of offering rooms by room type – where consumers routinely end up picking the lowest priced option – with ABS hoteliers can “unbundle” room inventory and merchandize individual attributes of a room to the guest. This new shopping experience benefits both guests and hoteliers:
+            
+            Guests can now easily correlate price with things they truly value - the tangible features and unique room attributes. Guests have the choice to spend their money on the bundle of features that gives them the most pleasure.
+            With ABS, hotels can monetize more of their assets and in the process increase the perceived value of their product without increasing their objective costs.
+            Room features that currently go unnoticed now drive differentiation and minimize direct price comparison for products that are actually different.
+            By giving consumers the option to choose features they value most, hoteliers have an opportunity to win on more than just price. The guest that feels good about their reservation – and their stay expectations, tend to be more loyal.
+            Any marketer can tell you that the presentation method of an offer, product, or service, can make a huge difference in our decision-making.For a hotel, your room product might just be the “best,” but it won’t be the best if the consumer can’t see its value. To the consumer, it is just another room. So, unless we all want merchandize our rooms like Motel 6 who imply that all rooms are the same with the lights off, something needs to be done to better showcase – and derive appropriate value from – our premium rooms. ABS holds the answer.
+            
+            About ROOMDEX, INC
+            ROOMDEX's hotel upsell software, Upgrade Optimizer, automates, monetizes, and ultimately simplifies the hotel room upgrade process by putting the power of choice in the hotel guest's hands. Automation is the cornerstone of our pioneering hotel optimization platform. ROOMDEX uses hotel reservation, guest data and its proprietary persona and price algorithms to deliver personalized digital offers, greatly enhancing the guest experience. The hotel upsell tool relieves hoteliers of the labor time required by other upselling solutions while delivering high margin revenue and a substantial ROI.
+            
+            The company was founded by Jos Schaap, Pierre Boettner and Denis Bajet, three industry veterans (Ex. MICROS-OPERA (now Oracle Hospitality), StayNTouch, Shiji and Nor1).  ROOMDEX leverages over 90 years of hotel software innovation experience in PMS, integrations, revenue management, BI, mobile, self-service and upgrade optimization software. Since founding in spring of 2020, ROOMDEX has signed on more than 100 hotels with 9,500 rooms across the U.S., U.K. and Europe.",
+            'image' => 'News.jpg'
         ]);
     }
 }
